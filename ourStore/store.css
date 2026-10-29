@@ -1,0 +1,77 @@
+:root {
+	--background-color: #f7cbf8;
+	--lighter-color: #F8D2F9;
+	--medium-color: #EE90EF;
+	--darker-color: #DC20DF;
+	--text-color: #ef5cf2;
+}
+
+body {
+	background-color: var(--medium-color);
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: var(--background-color);
+	font-family: 'Courier New', monospace;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+.link {
+	text-decoration: none;
+	font-size: 50px;
+	margin: 15px;
+	transition: transform 0.5s ease-in-out;
+	color: var(--medium-color);
+}
+
+.link:visited {
+	color: var(--darker-color);
+	/* color: purple; */
+}
+
+.link:hover {
+	transform: scale(115%);
+}
+
+.aside-link {
+	text-decoration: none;
+	font-size: 30px;
+	transition: transform 0.5s ease-in-out;
+	margin: 20px;
+}
+
+.aside-link:visited {
+	color: var(--darker-color);
+	/* color: purple; */
+}
+
+.aside-link:hover {
+	transform: scale(115%);
+}
+
+#aside {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background-color: var(--background-color);
+	width: 18%;
+	align-content: center;
+}
+
+ul {
+	list-style-image: url('../Boba.png')
+}
+
+#all {
+	display: flex;
+}
+
+main {
+	background-color: var(--medium-color);
+	width: 82%;
+}

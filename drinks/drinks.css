@@ -1,0 +1,114 @@
+:root {
+	--light-color: #f7cbf8;
+	--lighter-color: #F8D2F9;
+	--medium-color: #EE90EF;
+	--darker-color: #DC20DF;
+}
+
+body {
+	background-color: var(--medium-color);
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: var(--light-color);
+	font-family: 'Courier New', monospace;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+.link {
+	text-decoration: none;
+	font-size: 50px;
+	margin: 15px;
+	transition: transform 0.5s ease-in-out;
+	color: var(--medium-color);
+}
+
+.link:active {
+	color: var(--lighter-color);
+}
+
+.link:visited {
+	color: var(--darker-color);
+}
+
+.link:hover {
+	transform: scale(115%);
+}
+
+.aside-link {
+	text-decoration: none;
+	font-size: 30px;
+	transition: transform 0.5s ease-in-out;
+	color: var(--medium-color);
+}
+
+.aside-link:active {
+	color: var(--lighter-color);
+}
+
+.aside-link:visited {
+	color: var(--darker-color);
+}
+
+.aside-link:hover {
+	transform: scale(115%);
+}
+
+#aside {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background-color: var(--light-color);
+	height: 500px;
+	width: 15%;
+}
+
+ul {
+	list-style-image: url('../Boba.png')
+}
+
+#main {
+	background-color: var(--light-color);
+	width: 83%;
+	margin-left: 2%;
+	margin-top: 2%;
+	border-radius: 10px;
+}
+
+#primary {
+	display: flex;
+	flex-direction: row;
+}
+
+#footer {
+	background-color: var(--light-color);
+}
+
+.email {
+	color: var(--medium-color);
+	font-size: 35px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 3rem;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+.grid,
+.productBox {
+	border: 2px solid var(--darker-color);
+}
+
+.image {
+	width: 100%;
+	height: auto;
+}
